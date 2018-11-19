@@ -1,6 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),$(filter $(TARGET_DEVICE),oneplus6))
 include $(CLEAR_VARS)
+LOCAL_PRIVATE_PLATFORM_APIS := true
 
 LOCAL_MODULE_TAGS := optional
 LOCAL_STATIC_ANDROID_LIBRARIES := \
