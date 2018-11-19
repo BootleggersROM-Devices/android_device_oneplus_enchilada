@@ -19,10 +19,10 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-$(call inherit-product, vendor/oneplus/oneplus6/device-vendor.mk)
-$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
-$(call inherit-product, vendor/omni/config/phone-xxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, vendor/oneplus/sdm845-common/sdm845-common-vendor.mk)
+#$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
+#$(call inherit-product, vendor/omni/config/phone-xxhdpi-4096-dalvik-heap.mk)
+#$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 #from build treble includes
 PRODUCT_COPY_FILES += \
@@ -79,8 +79,8 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-PRODUCT_PACKAGES += \
-    omni_charger_res_images
+#PRODUCT_PACKAGES += \
+    #omni_charger_res_images
 
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
@@ -219,8 +219,8 @@ PRODUCT_PACKAGES += \
     RcsService \
     PresencePolling
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+    #WfdCommon
 
 # Netutils
 PRODUCT_PACKAGES += \
