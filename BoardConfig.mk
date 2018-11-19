@@ -75,7 +75,7 @@ ENABLE_SCHEDBOOST := true
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 swiotlb=2048 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3 firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.avb_version=1.0 androidboot.vbmeta.avb_version=1.0
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
@@ -232,13 +232,13 @@ TARGET_SYSTEM_PROP := $(BOARD_PATH)/system.prop
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # selinux
-include device/qcom/sepolicy/sepolicy.mk
-include vendor/omni/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy/qcom
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/private
+#include device/qcom/sepolicy/sepolicy.mk
+#include vendor/omni/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(BOARD_PATH)/sepolicy/qcom
+#BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/public
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(BOARD_PATH)/sepolicy/private
 
-BOARD_SECCOMP_POLICY += $(BOARD_PATH)/seccomp_policy
+#BOARD_SECCOMP_POLICY += $(BOARD_PATH)/seccomp_policy
 
 # for offmode charging
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
