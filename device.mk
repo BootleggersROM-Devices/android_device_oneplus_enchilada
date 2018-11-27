@@ -45,3 +45,9 @@ $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 # Inherit from vendor blobs
 #$(call inherit-product, vendor/oneplus/enchilada/enchilada-vendor.mk)
 
+TARGET_SUPPORTS_32_BIT_APPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_GAPPS_ARCH := arm64
+GAPPS_VARIANT := mini
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)

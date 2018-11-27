@@ -24,9 +24,6 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
-# Build GApps inline (requires https://gitlab.com/anirudhgupta109/vendor_pixelgapps.git/)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
 DEVICE_MAINTAINERS="Ayan"
