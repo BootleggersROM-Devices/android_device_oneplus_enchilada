@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from enchilada device
 $(call inherit-product, device/oneplus/enchilada/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Bootleggers stuff.
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Maintainer Prop
 PRODUCT_BUILD_PROP_OVERRIDES += \
 DEVICE_MAINTAINERS="Ayan"
 
-PRODUCT_NAME := bootleggers_enchilada
+PRODUCT_NAME := bootleg_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

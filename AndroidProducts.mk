@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleggers_enchilada.mk
+    $(LOCAL_DIR)/bootleg.mk
