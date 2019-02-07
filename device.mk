@@ -26,7 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -49,9 +50,3 @@ $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 # Inherit from vendor blobs
 #$(call inherit-product, vendor/oneplus/enchilada/enchilada-vendor.mk)
 
-TARGET_SUPPORTS_32_BIT_APPS := true
-TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_GAPPS_ARCH := arm64
-GAPPS_VARIANT := mini
-
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
