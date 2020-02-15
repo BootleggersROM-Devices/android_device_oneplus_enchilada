@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/stag_enchilada.mk
+    $(LOCAL_DIR)/bootleg_enchilada.mk
 
 COMMON_LUNCH_CHOICES := \
-    stag_enchilada-user \
-    stag_enchilada-userdebug \
-    stag_enchilada-eng
+    bootleg_enchilada-user \
+    bootleg_enchilada-userdebug \
+    bootleg_enchilada-eng
