@@ -23,6 +23,7 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 
 # Inherit some common Bootleggers stuff.
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+TARGET_BOOTLEG_ARCH := arm64
 
 PRODUCT_NAME := bootleg_enchilada
 PRODUCT_DEVICE := enchilada
